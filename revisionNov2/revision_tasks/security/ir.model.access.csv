@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+revision_tasks.access_company_company_user,access_company_company_user,revision_tasks.model_company_company,revision_tasks.security_user_access,1,1,0,0
+revision_tasks.access_company_company_manager,access_company_company_manager,revision_tasks.model_company_company,revision_tasks.security_manager_access,1,1,1,1
+revision_tasks.access_company,access_company,revision_tasks.model_company_company,base.group_user,1,1,1,1
+revision_tasks.access_date_taskk,access_date_taskk,revision_tasks.model_date_task,base.group_user,1,1,1,1
+revision_tasks.access_reason_wizard_user,access_reason_wizard_user,revision_tasks.model_reason_wizard,revision_tasks.security_user_access,1,1,1,1
+revision_tasks.access_reason_wizard_manager,access_reason_wizard_manager,revision_tasks.model_reason_wizard,revision_tasks.security_manager_access,1,1,1,1
+revision_tasks.access_my_model,access_my_model,revision_tasks.model_my_model,base.group_user,1,1,1,1
+revision_tasks.access_product_wizard,access_product_wizard,revision_tasks.model_product_wizard,base.group_user,1,1,1,1

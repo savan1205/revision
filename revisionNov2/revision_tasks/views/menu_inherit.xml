@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="menu_inherit"
+            name="Date Gen"
+            parent="sale.prod_config_main"
+            action="base.action_country"
+            sequence="200"/>
+            </odoo>

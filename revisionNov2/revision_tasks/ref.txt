@@ -1,0 +1,1 @@
+python3 odoo-bin --addons-path=addons/,/home/odoo/Desktop/revisionNov2 --xmlrpc-port 6001 -d v15revision -u revision_tasks

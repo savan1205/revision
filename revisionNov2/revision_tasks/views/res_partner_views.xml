@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner" model="ir.ui.view">
+        <field name="name">res Partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="credit_limit_check"/>
+                <field name="credit_limit" attrs="{'invisible':[('credit_limit_check','=',False)]}"/>
+                
+                <field name="block_limit_check"/>
+                <field name="block_limit" attrs="{'invisible':[('block_limit_check','=',False)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+                    <!-- "{'invisible':[('credit_limit_check','=',False)]"/> -->

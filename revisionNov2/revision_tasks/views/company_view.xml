@@ -1,0 +1,74 @@
+<odoo>
+
+    <record id="view_company_form" model="ir.ui.view">
+        <field name="name">company</field>
+        <field name="model">company.company</field>
+        <field name="arch" type="xml">
+            <form string="company">
+                <header>
+                    <button name="%(revision_tasks.action_wizard)d" type="action" string="resign" class="oe_highlight" />
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="sequence_number"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="partner_id"/>
+                        </group>
+
+                        <group>
+                            <field name="product_ids" widget="many2many_tags" />
+                            <field name="state"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_company_tree" model="ir.ui.view">
+        <field name="name">company.company.tree</field>
+        <field name="model">company.company</field>
+        <field name="arch" type="xml">
+            <tree string="Company">
+                <field name="name"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+    <record id="view_company_search_tree" model="ir.ui.view">
+        <field name="name">company</field>
+        <field name="model">company.company</field>
+        <field name="arch" type="xml">
+            <search >
+                <field name="name"/>
+                <field name="state"/>
+                <field name="partner_id"/>
+                <filter name="draft" domain="[('state','=','draft')]"/>
+                <group expand="0" string="Group By">
+                    <filter name="state" string="state" domain="[]" context="{'group_by': 'state'}">
+                    </filter>
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+    <record id="action_company" model="ir.actions.act_window">
+        <field name="name">A2Z company</field>
+        <field name="type">ir.actions.act_window</field>
+
+        <field name="res_model">company.company</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_company"
+              name="Our Company"
+              action="action_company"/>
+
+</odoo> 

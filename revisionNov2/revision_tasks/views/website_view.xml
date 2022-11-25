@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="food_templates" name="Goals">
+        <t t-call="website.layout">
+            <div class="main_section">
+                
+
+        <!-- Header/navbar -->
+                <nav class="menu">
+                    <img src="/revision_tasks/static/smoking-burger.png" class="logo"/>
+                    <!-- <span class="first">Spicy</span> -->
+                    <p class="about">About</p>
+                    <p>Screenshot</p>
+                    <p>Contact</p>
+                    <p class="contact_us">Contact Us: <span>12345678</span> </p>
+                    <!-- <button type="button" id="btn" class="btn btn-primary">Login</button> -->
+                </nav>
+
+
+        <!-- For Second Part  -->
+                <section class="banner">
+                    <div class="container">
+                        <div class="row d_flex">
+                            
+                            <!--Healthy Food Recipies     -->
+                            <div class="col-md-6">
+                                <div class="moto">
+                                    <h1>Healthy Food Recipies</h1>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majorityomised words which don't look even slightly believable</p>
+                                    <a class="read_more" href="#default">Read More</a>
+                                    <!-- <h1>Food</h1>
+                                    <h1>Recipies</h1> -->
+                                </div>
+                            </div>
+                            
+                        <!-- F o r m -->
+                            <div class="col-md-6">
+                                <form method="post" action="#" class="main_form" id="request">
+                                    <div clas="row">
+                                        
+                                        <div class="col-md-12">
+                                            <input class="form-control" placeholder="Enter Name" type ="text" name="name" />
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" placeholder="Enter Email" type ="text" name="email" />
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" placeholder="Enter Phone" type ="text" name="Phone" />
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input class="form-control" placeholder="Enter Message" type ="text" name="message" />
+                                        </div>
+
+                                        <div class="col-sm-12">
+                                            <button class="send">Send</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>  
+                    
+                    <div class="second_page">
+                        <div class="titlepage">
+                            <h1>Food<span>Packages</span></h1>
+                            <span class="para">There are many variations of passages of Lorem Ipsum available, but the majorityomised words which don't look even slightly believable</span>
+                        </div>
+                        <div class="flex-container">
+                            <div>Homemade <br></br>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                            </div>
+                            <div>Noodles <br></br>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                            </div>
+                            <div>Eggs<br></br>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
+                            </div>
+
+                        </div>
+                       <!--  <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titlepage">
+                                        <h1>Food<span>Packages</span></h1>
+                                        <span class="para">There are many variations of passages of Lorem Ipsum available, but the majorityomised words which don't look even slightly believable</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="food-box">
+                                        <h4>Homemade</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="food-box">
+                                        <h4>Noodles</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="food-box">
+                                        <h4>Eggs</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+        
+
+
+                
+
+
+
+
+
+
+            </div>
+        </t>
+    </template>
+</odoo>

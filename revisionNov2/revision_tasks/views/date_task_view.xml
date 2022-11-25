@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_date_form" model="ir.ui.view">
+        <field name="name">date task</field>
+        <field name="model">date.task</field>
+        <field name="arch" type="xml">
+            <form string="date task">
+                <sheet>
+                    <group>
+                        <group>
+                            <!-- <field name="name"/>-->
+                            <field name="date"/>
+                            <field name="number_of_days"/>
+                        </group>
+                        <group/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_dates_tree" model="ir.ui.view">
+        <field name="name">date.task.tree</field>
+        <field name="model">date.task</field>
+        <field name="arch" type="xml">
+            <tree string="date task">
+                <!-- <field name="name"/>-->
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_date_task" model="ir.actions.act_window">
+        <field name="name">A2Z company</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">date.task</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="action_date_task" id="menu_date_task" name="Date Gen" parent="menu_company"/>
+
+
+    <record id="action_my_model" model="ir.actions.act_window">
+        <field name="name">My Model</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">my.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem action="action_my_model" id="menu_my_model" name="My Menu" parent="menu_company"/>
+</odoo>
